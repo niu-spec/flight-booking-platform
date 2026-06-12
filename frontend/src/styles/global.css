@@ -1,0 +1,134 @@
+:root {
+  --primary: #0086f6;
+  --primary-dark: #006fd6;
+  --primary-light: #e8f4ff;
+  --accent: #ff7700;
+  --accent-hover: #ff8c1a;
+  --success: #00a870;
+  --warning: #ff9a00;
+  --danger: #f56c6c;
+  --text-primary: #1a1a1a;
+  --text-secondary: #666;
+  --text-muted: #999;
+  --border: #e8e8e8;
+  --bg-page: #f0f4f8;
+  --bg-card: #ffffff;
+  --shadow-sm: 0 2px 8px rgba(0, 50, 100, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 50, 100, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 50, 100, 0.14);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --header-height: 64px;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.page-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.page-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+}
+
+.page-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.page-subtitle {
+  margin: 0 0 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.empty-state .empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.price-text {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.price-text .currency {
+  font-size: 14px;
+}
+
+.price-text .amount {
+  font-size: 28px;
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, #ff8c1a, #ff7700) !important;
+  border: none !important;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 8px !important;
+  padding: 10px 28px !important;
+  height: auto !important;
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, #ff9a33, #ff8c1a) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 119, 0, 0.35);
+}
+
+.btn-accent:disabled {
+  background: #ccc !important;
+  transform: none;
+  box-shadow: none;
+}
+
+.el-button--primary {
+  --el-button-bg-color: var(--primary);
+  --el-button-border-color: var(--primary);
+  --el-button-hover-bg-color: var(--primary-dark);
+  --el-button-hover-border-color: var(--primary-dark);
+}
+
+.el-dialog {
+  border-radius: var(--radius) !important;
+}
+
+.el-dialog__header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 16px !important;
+}
+
+.el-tag {
+  border-radius: 4px !important;
+}
