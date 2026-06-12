@@ -32,3 +32,6 @@ Thumbs.db
 
 # 日志
 *.log
+
+# 课设文档（仅本地保留，不上传 GitHub）
+docs/
